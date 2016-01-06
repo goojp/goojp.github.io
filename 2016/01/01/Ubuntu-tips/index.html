@@ -3,17 +3,39 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Life being lived</title>
+  <title>怎样在Ubuntu服务器上设置时区？ | Life being lived</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="PHP Programming">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Life being lived">
-<meta property="og:url" content="http://xujietao.com/index.html">
+  <meta name="description" content="你可以用这个命令看下服务器上当前的时区
+1$ date
+或者看下时区文件
+1$ more /etc/timezone
+ 想要改变时区，运行这个就命令就可以。
+1$ sudo dpkg-reconfigure tzdata
+ 然后按照屏幕上的指示操作即可选择 Asia 然后Shanghai 即可 记得重启下cron。
+12/etc/init.d/cron stop/etc/init.d/cron s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="怎样在Ubuntu服务器上设置时区？">
+<meta property="og:url" content="http://xujietao.com/2016/01/01/Ubuntu-tips/index.html">
 <meta property="og:site_name" content="Life being lived">
-<meta property="og:description" content="PHP Programming">
+<meta property="og:description" content="你可以用这个命令看下服务器上当前的时区
+1$ date
+或者看下时区文件
+1$ more /etc/timezone
+ 想要改变时区，运行这个就命令就可以。
+1$ sudo dpkg-reconfigure tzdata
+ 然后按照屏幕上的指示操作即可选择 Asia 然后Shanghai 即可 记得重启下cron。
+12/etc/init.d/cron stop/etc/init.d/cron s">
+<meta property="og:updated_time" content="2016-01-06T14:52:08.535Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Life being lived">
-<meta name="twitter:description" content="PHP Programming">
+<meta name="twitter:title" content="怎样在Ubuntu服务器上设置时区？">
+<meta name="twitter:description" content="你可以用这个命令看下服务器上当前的时区
+1$ date
+或者看下时区文件
+1$ more /etc/timezone
+ 想要改变时区，运行这个就命令就可以。
+1$ sudo dpkg-reconfigure tzdata
+ 然后按照屏幕上的指示操作即可选择 Asia 然后Shanghai 即可 记得重启下cron。
+12/etc/init.d/cron stop/etc/init.d/cron s">
   
     <link rel="alternative" href="/atom.xml" title="Life being lived" type="application/atom+xml">
   
@@ -59,9 +81,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Ubuntu-tips" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Ubuntu-tips" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/01/01/Ubuntu-tips/" class="article-date">
   <time datetime="2016-01-01T12:38:34.000Z" itemprop="datePublished">2016-01-01</time>
@@ -78,8 +98,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/01/01/Ubuntu-tips/">怎样在Ubuntu服务器上设置时区？</a>
+    <h1 class="article-title" itemprop="name">
+      怎样在Ubuntu服务器上设置时区？
     </h1>
   
 
@@ -108,11 +128,10 @@
     </footer>
   </div>
   
+    
+  
 </article>
 
-
-  
-  
 </section>
         
           <aside id="sidebar">
