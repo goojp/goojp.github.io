@@ -3,17 +3,30 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Life being lived</title>
+  <title>关于使用composer | Life being lived</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="PHP Programming">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Life being lived">
-<meta property="og:url" content="http://xujietao.com/index.html">
+  <meta name="description" content="在Python中，用pip感觉很方便，比如安装Flask框架,可以这样
+1$ pip install Flask
+PHP也有类似的工具，叫做composer。 它不仅可以用来安装第三方的组件，还可以管理自动加载。
+安装Composer在Ubuntu上打开命令行（ctrl+atl+t快捷键），然后输入：
+1$ curl -sS https://getcomposer.org/installer |">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于使用composer">
+<meta property="og:url" content="http://xujietao.com/2016/01/03/how-to-use-composer/index.html">
 <meta property="og:site_name" content="Life being lived">
-<meta property="og:description" content="PHP Programming">
+<meta property="og:description" content="在Python中，用pip感觉很方便，比如安装Flask框架,可以这样
+1$ pip install Flask
+PHP也有类似的工具，叫做composer。 它不仅可以用来安装第三方的组件，还可以管理自动加载。
+安装Composer在Ubuntu上打开命令行（ctrl+atl+t快捷键），然后输入：
+1$ curl -sS https://getcomposer.org/installer |">
+<meta property="og:updated_time" content="2016-01-11T07:33:55.817Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Life being lived">
-<meta name="twitter:description" content="PHP Programming">
+<meta name="twitter:title" content="关于使用composer">
+<meta name="twitter:description" content="在Python中，用pip感觉很方便，比如安装Flask框架,可以这样
+1$ pip install Flask
+PHP也有类似的工具，叫做composer。 它不仅可以用来安装第三方的组件，还可以管理自动加载。
+安装Composer在Ubuntu上打开命令行（ctrl+atl+t快捷键），然后输入：
+1$ curl -sS https://getcomposer.org/installer |">
   
     <link rel="alternative" href="/atom.xml" title="Life being lived" type="application/atom+xml">
   
@@ -61,9 +74,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-how-to-use-composer" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-how-to-use-composer" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/01/03/how-to-use-composer/" class="article-date">
   <time datetime="2016-01-03T12:45:27.000Z" itemprop="datePublished">2016-01-03</time>
@@ -80,8 +91,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/01/03/how-to-use-composer/">关于使用composer</a>
+    <h1 class="article-title" itemprop="name">
+      关于使用composer
     </h1>
   
 
@@ -110,62 +121,20 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Ubuntu-tips" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/01/01/Ubuntu-tips/" class="article-date">
-  <time datetime="2016-01-01T12:38:34.000Z" itemprop="datePublished">2016-01-01</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Ubuntu/">Ubuntu</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/01/01/Ubuntu-tips/">怎样在Ubuntu服务器上设置时区？</a>
-    </h1>
+    <a href="/2016/01/01/Ubuntu-tips/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">怎样在Ubuntu服务器上设置时区？</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>你可以用这个命令看下服务器上当前的时区</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ date</span><br></pre></td></tr></table></figure>
-<p>或者看下时区文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ more /etc/timezone</span><br></pre></td></tr></table></figure>
-<p> 想要改变时区，运行这个就命令就可以。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo dpkg-reconfigure tzdata</span><br></pre></td></tr></table></figure>
-<p> 然后按照屏幕上的指示操作即可选择 Asia 然后Shanghai 即可<br> 记得重启下cron。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ /etc/init.d/cron stop</span><br><span class="line">$ /etc/init.d/cron start</span><br></pre></td></tr></table></figure>
-<p>或者这2个命令，他们等价。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ stop cron</span><br><span class="line">$ start cron</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://xujietao.com/2016/01/01/Ubuntu-tips/" data-id="cij9nlqez00071b9yose935dh" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntu/">Ubuntu</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
 
-
-  
-  
 </section>
         
           <aside id="sidebar">
